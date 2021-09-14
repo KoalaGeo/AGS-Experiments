@@ -1,0 +1,129 @@
+{
+  "type": "CoverageCollection",
+	"dct:identifier": "20374782",
+	"dct:hasVersion": "4.0",
+	"dct:rightsHolder": "MR E. O'BRIEN",
+	"dct:Location": "GLAN-Y-NANT, LLANIDLOES",
+	"dct:title": "Mount Severn- Environment Agency",
+	"ags:contractor:": "W.B. & A.D. MORGAN LTD.",
+	"ags:engineer": "R.MILLS & J. SCOTT",
+  "parameters" : {
+    "PTIM": {
+      "type" : "Parameter",
+      "description" : {
+        "en": "Boring/Drilling Progress by Time"
+      },
+      "unit" : {
+				"label": {
+					"en": "meters"
+				},
+				"symbol": {
+					"value": "m",
+					"type": "http://www.opengis.net/def/uom/SI/metre"
+				}
+			},
+      "observedProperty" : {
+        "id": "http://vocab.nerc.ac.uk/standard_name/sea_water_salinity/",
+        "label" : {
+          "en": "Boring/Drilling Progress by Time"
+        }
+      }
+    },
+    "GEOL": {
+			"type": "Parameter",
+			"observedProperty": {
+				"id": "https://data.ags.org.uk/def/ags/geol",
+				"label": {
+					"en": "Geology"
+				},
+				"categories": [{
+					"id": "101",
+					"label": {
+						"en": "Overburden"
+					}
+				},{
+					"id": "817",
+					"label": {
+						"en": "Limestone Shale"
+					}
+				}],
+      "categoryEncoding": {
+					"101": 101,
+					"817": 817
+			}
+    }
+  }
+  },
+  "referencing": [{
+    "coordinates": ["x","y"],
+    "system": {
+      "type": "GeographicCRS",
+      "id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    }
+  }, {
+    "coordinates": ["z"],
+    "system": {
+      "type": "VerticalCRS",
+      "cs": {
+        "csAxes": [{
+          "name": {
+            "en": "Depth"
+          },
+          "direction": "down",
+          "unit": {
+            "symbol": "m"
+          }
+        }]
+      }
+    }
+  }, {
+    "coordinates": ["t"],
+    "system": {
+      "type": "TemporalRS",
+      "calendar": "Gregorian"
+    }
+  }],
+  "domainType" : "VerticalProfile",
+  "coverages": [
+    {
+      "type" : "Coverage",
+      "domain" : {
+        "type": "Domain",
+        "axes": {
+          "x": { "values": [-52.4437409194] },
+          "y": { "values": [-3.5550706475] },
+          "z": { "values": [ 5, 8, 14 ] },
+          "t": { "values": ["2013-01-13T11:12:20Z"] }
+        }
+      },
+      "ranges" : {
+        "GEOL" : {
+          "type" : "NdArray",
+          "dataType": "integer",
+          "axisNames": ["z"],
+          "shape": [3],
+          "values" : [ 101, 101, 817 ]
+        }
+      }
+    }, {
+      "type" : "Coverage",
+      "domain" : {
+        "type": "Domain",
+        "axes": {
+          "x": { "values": [-52.443] },
+          "y": { "values": [-3.55] },
+          "z": { "values": [ 4, 7, 9 ] },
+          "t": { "values": ["2013-01-13T12:12:20Z"] }
+        }
+      },
+      "ranges" : {
+        "PTIM" : {
+          "type" : "NdArray",
+          "dataType": "float",
+          "axisNames": ["z"],
+          "shape": [3],
+          "values" : [ 42.7, 41.8, 40.9 ]
+        }
+      }
+    }]
+}
