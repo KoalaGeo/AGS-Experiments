@@ -8,7 +8,6 @@ Standalone web form which calls agsapi.bgs.ac.uk
     <form action="https://agsapi.bgs.ac.uk/validate/" enctype="multipart/form-data" method="post">
         <p>Select AGS version, if not specified in TRAN_AGS: </p>
         <p>Tool uses AGS version specified in the supplied file, if not present, uses selection here, default is v4.0.4</p>
-      </div>
       <br><br>
       <fieldset>
           <legend>Select Version</legend>
@@ -49,7 +48,6 @@ Standalone web form which calls agsapi.bgs.ac.uk
     <h2>AGS Converter</h2>
       <p>Convert .ags file(s) to/from .xlsx.</p>
       <p>Which ever format file is submitted, the opposite will be returned e.g. if 5 .ags files and 3 .xlsx files were submitted the result would be 5 .xlsx files and 3 .ags files</p>
-      </div>
       <br>
     <br>
     <fieldset>
