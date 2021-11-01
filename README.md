@@ -58,9 +58,9 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 <section id="validator">
     <br>
     <h2>AGS Schema & Data Validation</h2>
-    <form action="/validate/" enctype="multipart/form-data" method="post">
-        <div class="tooltip"><p>Select AGS version, if not specified in TRAN_AGS: </p>
-        <span class="tooltiptext">Tool uses AGS version specified in the supplied file, if not present, uses selection here, default is v4.0.4</span>
+    <form action="https://agsapi.bgs.ac.uk/validate/" enctype="multipart/form-data" method="post">
+        <p>Select AGS version, if not specified in TRAN_AGS: </p>
+        <p>Tool uses AGS version specified in the supplied file, if not present, uses selection here, default is v4.0.4</p>
       </div>
       <br><br>
       <fieldset>
@@ -158,26 +158,11 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
     <br>
     <fieldset>
         <legend>Select files</legend>
-    <form action="/convert/" enctype="multipart/form-data" method="post">
+    <form action="https://agsapi.bgs.ac.uk/convert/" enctype="multipart/form-data" method="post">
     <input name="files" type="file" multiple>
     <input type="submit">
     </fieldset>
     </form>
 </section>
-<br>
-<hr>
-<section id="openapi">
-      <h2>API Definition</h2>
-      <p>
-        <a href="/docs/">Documentation (Swagger UI)</a>
-      </p>
-      <p>
-        <a href="/openapi.json/">OpenAPI Document</a>
-      </p>
-      <p>
-        <a href="/redoc/">ReDoc</a>
-      </p>
-</section>
-</div>
 
 
