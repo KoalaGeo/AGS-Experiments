@@ -55,6 +55,9 @@ Standalone web form which calls agsapi.bgs.ac.uk
     <input type="submit">
     </fieldset>
     </form>
+    </section>
+    
+See https://github.com/KoalaGeo/AGS-Experiments/ for code    
 
 
 
